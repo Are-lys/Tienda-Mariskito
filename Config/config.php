@@ -26,8 +26,8 @@
 	//Api PayPal
 	//SANDBOX PAYPAL
 	const URLPAYPAL = "https://api-m.sandbox.paypal.com";
-	const IDCLIENTE = "Acfm1vVQMDUBginZdeJYEGo8iEBugU8LV3gzjJ7W6WSPKNz5w8ElnAfa98KBvQNwMvPTsPHsibOGj-e-";
-	const SECRET = "EKpEQyQoAG3hBw1OeerW4gwcdN4e0fEApwiEH-LWiZk5Q9fSHOis00qAZuPh-0qFqQKYakSe3lXJSKUQ";
+	const IDCLIENTE = "AaIzmM2UJ7OMQ7MdY3l4F6mHQFk_3Xlx49H9x0Ln7LOPQvpKp0htKSeOP-hgGoxRuPXBbD2KT5xlzosI";
+	const SECRET = "EFStMX2p2KbTbSHsRcDnNI8k4FIqIp4uExTcE4k293OFvoAqJO6mHHJw00YLP2L3ClxY6bw8wG5Ak6ue";
  
 	//Datos envio de correo
 	const NOMBRE_REMITENTE = "MARISKITO";
@@ -47,8 +47,8 @@
 	const EMAIL_SUSCRIPCION = "arelyschancay@gmail.com";
 	const EMAIL_CONTACTO = "arelyschancay@gmail.com";
 
-	const CAT_SLIDER = "1,2,3";
-	const CAT_BANNER = "4,5,6";
+	const CAT_SLIDER = "1,2,3,4,5";
+	const CAT_BANNER = "6";
 	const CAT_FOOTER = "1,2,3,4,5";
 
 	//Datos para Encriptar / Desencriptar

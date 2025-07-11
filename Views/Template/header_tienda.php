@@ -3,10 +3,12 @@
 	if(isset($_SESSION['arrCarrito']) and count($_SESSION['arrCarrito']) > 0){ 
 		foreach($_SESSION['arrCarrito'] as $product) {
 			$cantCarrito += $product['cantidad'];
-		}
+		} 
 	}
 	$tituloPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['titulo'] : "";
 	$infoPreguntas = !empty(getInfoPage(PPREGUNTAS)) ? getInfoPage(PPREGUNTAS)['contenido'] : "";
+	 $paginaActiva = $data['page_id'] ?? 0;
+
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -145,33 +147,23 @@
 					</a>
 
 					<!-- Menu desktop -->
-					<div class="menu-desktop">
-						<ul class="main-menu">
-							<li class="active-menu">
-								<a href="<?= base_url(); ?>">Inicio</a>
-							</li>
+					<ul class="main-menu">
+						<li class="<?= $paginaActiva == PINICIO ? 'active-menu' : '' ?>">
+							<a href="<?= base_url(); ?>" style="color: #000; font-size: 18px">Inicio</a>
+						</li>
 
-							<li>
-								<a href="<?= base_url(); ?>/tienda">Tienda</a>
-							</li>
+						<li class="<?= $paginaActiva == PTIENDA ? 'active-menu' : '' ?>">
+							<a href="<?= base_url(); ?>/tienda" style="color: #000; font-size: 18px">Tienda</a>
+						</li>
 
-							<li>
-								<a href="<?= base_url(); ?>/carrito">Carrito</a>
-							</li>
-						<!-- 	
-							<li>
-								<a href="<?= base_url(); ?>/nosotros">Nosotro</a>
-							</li> -->
+						<li class="<?= $paginaActiva == PCARRITO ? 'active-menu' : '' ?>">
+							<a href="<?= base_url(); ?>/carrito" style="color: #000; font-size: 18px">Carrito</a>
+						</li>
 
-						<!-- 	<li>
-								<a href="<?= base_url(); ?>/sucursales">Sucursales</a>
-							</li>
- -->
-							<li>
-								<a href="<?= base_url(); ?>/contacto">Contacto</a>
-							</li>
-						</ul>
-					</div>	
+						<li class="<?= $paginaActiva == PCONTACTO ? 'active-menu' : '' ?>">
+							<a href="<?= base_url(); ?>/contacto" style="color: #000; font-size: 18px">Contacto</a>
+						</li>
+					</ul>
 
 					<!-- Icon header -->
 					<div class="wrap-icon-header flex-w flex-r-m">
@@ -316,3 +308,11 @@
 			</div>
 		</div>
 	</div>
+
+	<style>
+		.active-menu > a {
+			color: #0077b6 !important;
+			font-weight: bold;
+			border-bottom: 2px solid #0077b6;
+		}
+	</style>

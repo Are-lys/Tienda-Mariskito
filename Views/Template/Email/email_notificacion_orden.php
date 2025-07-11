@@ -39,7 +39,7 @@ $detalle = $data['pedido']['detalle'];
 		<table>
 			<tr>
 				<td width="33.33%">
-					<img class="logo" src="<?= media(); ?>/tienda/images/logo-mariskito.png" alt="Logo">
+					<img class="logo" src="https://firebasestorage.googleapis.com/v0/b/eugene-smith-cpa.appspot.com/o/logo-mariskito.jpg?alt=media&token=ebadecc5-4274-476b-aa7d-71429efd8f20" alt="Logo" style="width: 100px">
 				</td>
 				<td width="33.33%">
 					<div class="text-center">

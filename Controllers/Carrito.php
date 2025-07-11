@@ -16,6 +16,7 @@
 			$data['page_tag'] = NOMBRE_EMPESA.' - Carrito';
 			$data['page_title'] = 'Carrito de compras';
 			$data['page_name'] = "carrito";
+			$data['page_id'] = PCARRITO;
 			$this->views->getView($this,"carrito",$data); 
 		}
 		public function procesarpago()

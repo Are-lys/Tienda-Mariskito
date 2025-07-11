@@ -36,15 +36,21 @@
           </div>
         </div>
         <form class="login-form" name="formLogin" id="formLogin" action="">
-          <h3 class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>INICIAR SESIÓN</h3>
-          <div class="form-group">
-            <label class="control-label">USUARIO</label>
-            <input id="txtEmail" name="txtEmail" class="form-control" type="email" placeholder="Email" autofocus>
+         <h4 class="login-head"></i>INGRESE SUS CREDENCIALES</h4>
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-user"></i></span>
+            </div>
+            <input id="txtEmail" name="txtEmail" class="form-control" type="email" placeholder="Correo electrónico" autofocus>
           </div>
-          <div class="form-group">
-            <label class="control-label">CONTRASEÑA</label>
+
+          <div class="form-group input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="fa fa-lock"></i></span>
+            </div>
             <input id="txtPassword" name="txtPassword" class="form-control" type="password" placeholder="Contraseña">
           </div>
+
           <div class="form-group">
             <div class="utility">
               <p class="semibold-text mb-2"><a href="#" data-toggle="flip">¿Olvidaste tu contraseña?</a></p>

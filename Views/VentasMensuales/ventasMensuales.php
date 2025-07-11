@@ -37,7 +37,7 @@
                     <h6 class="text-center">Últimos Pedidos</h6>
                 </div>
                 <div class="col-6 col-md-2">
-                    <img src="<?= media() ?>/images/logo.jpeg" width="100px">
+                    <img src="<?= media() ?>/tienda/images/logo-mariskito.png" width="100px">
                 </div>
             </div>
 

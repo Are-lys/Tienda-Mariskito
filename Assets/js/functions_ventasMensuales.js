@@ -34,7 +34,7 @@ function fntSearchData() {
                        <td>${element.tipopago}</td>
                        <td>${element.status}</td>
                        <td class="text-right"></td>
-                       <td><a href="http://192.168.1.15/Proyecto_Asociacion/pedidos/orden/${element.idpedido}"
+                       <td><a href="http://localhost/Proyecto_Tienda/pedidos/orden/${element.idpedido}"
                                target="_blank"><i class="fa fa-eye" aria-hidden="true"></i></a></td>
                    </tr>`;
                    i++;

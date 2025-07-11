@@ -30,6 +30,7 @@
 			$data['pagina'] = $pagina;
 			$data['total_paginas'] = $total_paginas;
 			$data['categorias'] = $this->getCategorias();
+			$data['page_id'] = PTIENDA;
 			$this->views->getView($this,"tienda",$data);
 		}
 
@@ -60,6 +61,7 @@
 				$data['pagina'] = $pagina;
 				$data['total_paginas'] = $total_paginas;
 				$data['categorias'] = $this->getCategorias();
+				$data['page_id'] = PTIENDA;
 				$this->views->getView($this,"categoria",$data);
 			}
 		}
@@ -80,6 +82,7 @@
 				$data['page_name'] = "producto";
 				$data['producto'] = $infoProducto;
 				$data['productos'] = $this->getProductosRandom($infoProducto['categoriaid'],8,"r");
+				$data['page_id'] = PTIENDA;
 				$this->views->getView($this,"producto",$data);
 			}
 		}
@@ -257,7 +260,11 @@
 					}
 				}
 				echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
+			}else{
+				$arrResponse = array("status" => false, "msg" => 'No se recibieron datos.');
+				echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
 			}
+
 			die();
 		}
 
@@ -396,6 +403,7 @@
 				$data['page_name'] = "confirmarpedido";
 				$data['orden'] = $idpedido;
 				$data['transaccion'] = $transaccion;
+				$data['page_id'] = PTIENDA;
 				$this->views->getView($this,"confirmarpedido",$data);
 			}
 			unset($_SESSION['dataorden']);
@@ -416,6 +424,7 @@
 			$data['pagina'] = $pagina;
 			$data['total_paginas'] = $total_paginas;
 			$data['categorias'] = $this->getCategorias();
+			$data['page_id'] = PTIENDA;
 			$this->views->getView($this,"tienda",$data);
 		}
 
@@ -439,6 +448,7 @@
 			$data['total_paginas'] = $total_paginas;
 			$data['busqueda'] = $busqueda;
 			$data['categorias'] = $this->getCategorias();
+			$data['page_id'] = PTIENDA;
 			$this->views->getView($this,"search",$data);
 
 		}

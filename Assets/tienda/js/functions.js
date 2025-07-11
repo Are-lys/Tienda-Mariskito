@@ -166,18 +166,38 @@ if(document.querySelector("#formRegister")){
         let request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
         let ajaxUrl = base_url+'/Tienda/registro'; 
         let formData = new FormData(formRegister);
+		console.log(formData);
         request.open("POST",ajaxUrl,true);
         request.send(formData);
         request.onreadystatechange = function(){
-            if(request.readyState == 4 && request.status == 200){
-                let objData = JSON.parse(request.responseText);
-                if(objData.status)
-                {
-                    window.location.reload(false);
-                }else{
-                    swal("Error", objData.msg , "error");
-                }
-            }
+            // if(request.readyState == 4 && request.status == 200){
+            //     let objData = JSON.parse(request.responseText);
+            //     if(objData.status)
+            //     {
+            //         window.location.reload(false);
+            //     }else{
+            //         swal("Error", objData.msg , "error");
+            //     }
+            // }
+			if(request.readyState == 4 && request.status == 200){
+				try {
+					if(request.responseText){
+						let objData = JSON.parse(request.responseText);
+						if(objData.status){
+							window.location.reload(false);
+						}else{
+							swal("Error", objData.msg , "error");
+						}
+					} else {
+						console.error("Respuesta vacía del servidor.");
+						swal("Error", "Error inesperado. El servidor no respondió correctamente.", "error");
+					}
+				} catch (error) {
+					console.error("Error al parsear JSON:", error, request.responseText);
+					swal("Error", "La respuesta del servidor no es válida.", "error");
+				}
+			}
+
             divLoading.style.display = "none";
             return false;
         }

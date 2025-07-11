@@ -114,7 +114,7 @@ $urlShared = base_url()."/tienda/producto/".$arrProducto['idproducto']."/".$arrP
 			</div>
 		</div>
 
-		<div class="bg6 flex-c-m flex-w size-302 m-t-73 p-tb-15">
+		<div class="bg6 flex-c-m flex-w size-302 m-t-73 p-tb-15 cl13">
 			<h3>Productos Relacionados</h3>
 		</div>
 	</section>
@@ -148,11 +148,11 @@ $urlShared = base_url()."/tienda/producto/".$arrProducto['idproducto']."/".$arrP
 							</div>
 
 							<div class="block2-txt flex-w flex-t p-t-14">
-								<div class="block2-txt-child1 flex-col-l ">
-									<a href="<?= base_url().'/tienda/producto/'.$arrProductos[$p]['idproducto'].'/'.$ruta; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+								<div class="block2-txt-child1 flex-col-l">
+									<a href="<?= base_url().'/tienda/producto/'.$arrProductos[$p]['idproducto'].'/'.$ruta; ?>" class="stext-104 cl13 hov-cl1 trans-04 js-name-b2 p-b-6">
 										<?= $arrProductos[$p]['nombre'] ?>
 									</a>
-									<span class="stext-105 cl3">
+									<span class="stext-105 cl13">
 										<?= SMONEY.formatMoney($arrProductos[$p]['precio']); ?>
 									</span>
 								</div>

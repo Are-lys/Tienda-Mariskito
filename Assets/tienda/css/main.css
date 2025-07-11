@@ -438,14 +438,15 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 /*---------------------------------------------*/
-.main-menu > li:hover > a {
-  text-decoration: none;
-  color: #6c7ae0;
+.active-menu > a {
+	color: #0077b6 !important;
+	font-weight: bold;
+	border-bottom: 2px solid #0077b6;
 }
 
-.main-menu > li:hover > .sub-menu {
-  visibility: visible;
-  opacity: 1;
+.main-menu > li:hover > a {
+	text-decoration: none;
+	color: #00a8e8;
 }
 
 .sub-menu li:hover > .sub-menu {

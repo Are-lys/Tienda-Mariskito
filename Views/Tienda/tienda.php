@@ -8,7 +8,7 @@ $arrProductos = $data['productos'];
 	<div class="bg0 m-t-23 p-b-140">
 		<div class="container">
 			<div class="flex-w flex-sb-m p-b-52">
-				<div class="flex-w flex-l-m filter-tope-group m-tb-10">
+				<div class="flex-w flex-l-m filter-tope-group m-tb-10 cl13">
 					<h3><?= $data['page_title']; ?></h3>
 				</div>
 
@@ -67,11 +67,11 @@ $arrProductos = $data['productos'];
 							</a>
 						</div>
 						<div class="block2-txt flex-w flex-t p-t-14">
-							<div class="block2-txt-child1 flex-col-l ">
-								<a href="<?= base_url().'/tienda/producto/'.$arrProductos[$p]['idproducto'].'/'.$ruta; ?>" class="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6">
+							<div class="block2-txt-child1 flex-col-l">
+								<a href="<?= base_url().'/tienda/producto/'.$arrProductos[$p]['idproducto'].'/'.$ruta; ?>" class="stext-104 cl13 hov-cl1 trans-04 js-name-b2 p-b-6">
 									<?= $arrProductos[$p]['nombre'] ?>
 								</a>
-								<span class="stext-105 cl3">
+								<span class="stext-105 cl13">
 									<?= SMONEY.formatMoney($arrProductos[$p]['precio']); ?>
 								</span>
 							</div>

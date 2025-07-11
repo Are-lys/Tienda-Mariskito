@@ -19,6 +19,7 @@
 			$data['slider'] = $this->getCategoriasT(CAT_SLIDER);
 			$data['banner'] = $this->getCategoriasT(CAT_BANNER);
 			$data['productos'] = $this->getProductosT();
+			$data['page_id'] = PINICIO;
 			$this->views->getView($this,"home",$data); 
 		}
 

@@ -5,6 +5,7 @@
  * ================================*/
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,400i,700);
 @import url(https://fonts.googleapis.com/css?family=Niconne);
+@import url(https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap);
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -6209,7 +6210,7 @@ a.close.disabled {
   min-height: calc(100% - 1rem);
 }
 
-.modal-dialog-centered::before {
+.-dialog-centered::before {
   display: block;
   height: calc(100vh - 1rem);
   content: "";
@@ -16381,7 +16382,7 @@ be a descendant of the grid when it is being dragged.
 
 .login-content .logo {
   margin-bottom: 40px;
-  font-family: "Niconne";
+  font-family: "Bree Serif", serif;
   color: #fff;
 }
 
@@ -16410,6 +16411,7 @@ be a descendant of the grid when it is being dragged.
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
   text-align: center;
+  white-space: nowrap;
 }
 
 .login-content .login-box label {

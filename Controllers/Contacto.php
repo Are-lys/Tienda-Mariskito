@@ -17,6 +17,7 @@
 				$data['page_title'] = NOMBRE_EMPESA." - ".$pageContent['titulo'];
 				$data['page_name'] = $pageContent['titulo'];
 				$data['page'] = $pageContent;
+				$data['page_id'] = PCONTACTO;
 				$this->views->getView($this,"contacto",$data); 
 			}
 

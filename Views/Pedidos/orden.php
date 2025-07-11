@@ -27,8 +27,7 @@
         <section id="sPedido" class="invoice">
           <div class="row mb-4">
             <div class="col-6">
-              <!-- <h2 class="page-header"><img src="<?= media(); ?>/tienda/images/logo.png" ></h2> -->
-              <h2>ASOCIACION DE ARTESANOS</h2>
+              <h2 class="page-header"><img src="<?= media(); ?>/tienda/images/logo-mariskito.png" style="width: 100px; border: 1px solid"></h2>
             </div>
             <div class="col-6">
               <h5 class="text-right">Fecha: <?= $orden['fecha'] ?></h5>
